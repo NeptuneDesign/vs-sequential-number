@@ -1,0 +1,53 @@
+{
+	"name": "vs-sequential-number",
+	"displayName": "VS Sequential Number",
+	"description": "Input sequential number in the across multiple cursors.",
+	"version": "0.0.1",
+	"publisher": "neptunedesign",
+	"author": {
+		"name": "Fortez Fabrice",
+        "email": "contact@neptune-design.fr",
+        "url": "https://neptune-design.fr"
+	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/neptunedesign/vs-sequential-number"
+    },
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"keywords": [
+		"serial number", "sequence number", "numbering", "increment", "text helper"
+	],
+	"categories": [
+		"Formatters", "Other"
+	],
+	"icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#423B55",
+        "theme": "dark"
+    },
+	"activationEvents": [
+		"onCommand:vs-sequential-number.generate"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vs-sequential-number.generate",
+				"title": "Sequential Number"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
