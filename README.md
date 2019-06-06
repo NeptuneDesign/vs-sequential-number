@@ -20,6 +20,10 @@ An Visual Studio Code package, to inputs sequential numbers across multiple curs
 
 ## Release Notes
 
+### 1.0.0
+
+- Update of security dependencies
+
 ### 0.0.1
 
 - Initial release
