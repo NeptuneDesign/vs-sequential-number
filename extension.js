@@ -32,7 +32,9 @@ function sequentialNumberGenerate() {
 				let step = '1';
 
 				if (options[1]) {
-					if (options[1] == '+' || options[1] == '-') {
+					if (options[1] == '+' || options[1] == '-'
+					|| options[1] == '*' || options[1] == '/'
+					) {
 						operator = options[1];
 						step = options[2] ? options[2] : '1';
 					} else {
@@ -40,12 +42,15 @@ function sequentialNumberGenerate() {
 					}
 				}
 
+				let result = start;
+
 				vscode.window.activeTextEditor.edit((editBuilder) => {
 					vscode.window.activeTextEditor.selections.forEach((element, index) => {
-						editBuilder.replace(
-							element,
-							(eval(parseInt(start) + operator + (index * parseInt(step)))).toString()
-						);
+						if (operator == '+' || operator == '-')
+							result = eval(parseInt(start) + operator + (index * parseInt(step)));
+						else if (operator == '*' || operator == '/')
+							result = eval(parseInt(result) + operator + parseInt(step));
+						editBuilder.replace(element, result.toString());
 					});
 				});
 			}
