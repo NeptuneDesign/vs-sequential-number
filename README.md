@@ -12,13 +12,17 @@ An Visual Studio Code package, to inputs sequential numbers across multiple curs
 <start> <operator?> <step?>
 ```
 
-| Key                                   | Default | Definition                                                                  |
-| :------------------------------------ | :------ | :-------------------------------------------------------------------------- |
-| **start**                             | `1`     | It specifies the number that you start typing an integer.                   |
-| **operator** (optinal)                | `+`     | It specifies the generation rules of consecutive numbers in the `+` or `-`. |
-| **step** (optinal)                    | `1`     | It specifies the integer to be added or subtracted.                         |
+| Key                                   | Default | Definition                                                                            |
+| :------------------------------------ | :------ | :------------------------------------------------------------------------------------ |
+| **start**                             | `1`     | It specifies the number that you start typing an integer.                             |
+| **operator** (optinal)                | `+`     | It specifies the generation rules of consecutive numbers in the `+`, `-`, `*` or `/`. |
+| **step** (optinal)                    | `1`     | It specifies the integer to be added or subtracted.                                   |
 
 ## Release Notes
+
+## 1.1.0
+
+- Add operator '*', '/', Thanks to SangheonYi
 
 ### 1.0.0
 

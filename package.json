@@ -2,7 +2,7 @@
 	"name": "vs-sequential-number",
 	"displayName": "VS Sequential Number",
 	"description": "Input sequential number in the across multiple cursors.",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"publisher": "neptunedesign",
 	"author": {
 		"name": "Fortez Fabrice",
