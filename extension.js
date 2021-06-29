@@ -32,7 +32,7 @@ function sequentialNumberGenerate() {
 				let step = '1';
 
 				if (options[1]) {
-					if (['+', '-', '*', '/'].includes(options[1])) {
+					if (['+', '-', '*', '/', '%'].includes(options[1])) {
 						operator = options[1];
 						step = options[2] ? options[2] : '1';
 					} else {
